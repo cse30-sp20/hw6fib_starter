@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void printfib(int f);
 extern int asm_fib(int f);
 
 int main(int argc, char **argv){
