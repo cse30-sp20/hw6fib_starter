@@ -8,7 +8,7 @@
 #
 
 EXE = fibo
-OBJS = main.o fib.o asm_fib.o
+OBJS = main.o asm_fib.o
 LIBS = 
 CC = gcc 
 CFLAGS = -g -O0
@@ -19,7 +19,7 @@ CFLAGS +=  --std=gnu99
 $(EXE) : $(OBJS)
 	gcc -o $@ $(CFLAGS) $(OBJS) $(LIBS)
 
-main.o : main.c fib.c asm_fib.S
+main.o : main.c asm_fib.S
 asm_fib.o : asm_fib.S
 	gcc -c $(CFLAGS) -gstabs+ asm_fib.S
 
