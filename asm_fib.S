@@ -1,5 +1,5 @@
 	.arch armv6
-	.cpu cortex-53
+	.cpu cortex-a53
 	.text
 	.global asm_fib
 
